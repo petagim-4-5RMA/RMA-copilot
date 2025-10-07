@@ -1,0 +1,27 @@
+name: Export Marp slides to PPTX
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'slides/*.marp.md'
+  pull_request:
+    paths:
+      - 'slides/*.marp.md'
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export Marp deck to PPTX
+        uses: marp-team/marp-cli-action@v2
+        with:
+          from: slides/Slides-Android-12-casova-SIMPLE.marp.md
+          to: slides/Slides-Android-12-casova-SIMPLE.pptx
+          allowLocalFiles: true
+      - name: Upload PPTX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: slides-pptx
+          path: slides/Slides-Android-12-casova-SIMPLE.pptx

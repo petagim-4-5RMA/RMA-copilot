@@ -1,21 +1,24 @@
 # Lekcija 12 — Provjera znanja 2 (A.IV.2.2)
 
+Trajanje: 45–60 min
+Preduslovi: Lekcije 08–11
+
 Sadržaj časa
-- Kviz 2: debug, optimizacija koda, analiza problematičnih dijelova.
-- Praktični zadatak: identifikovati i popraviti problem (I/O ili mreža).
+- Kviz: debug, optimizacija, analiza problematičnih dijelova.
+- Praktikum: identifikuj usko grlo i predloži popravku (I/O ili mreža).
 
-Kviz (primjer 8 pitanja)
-1) Šta je breakpoint i čemu služi?
-2) Kako locirati uzrok u stack trace-u?
-3) Zašto ne blokirati UI nit?
-4) Jedna mjera za bolje performanse u listama?
-5) Kako organizovati korisno logovanje?
-6) Razlika CPU vs. memorija u kontekstu performansi?
-7) Šta znači “čitljiv kod”?
-8) Smisao kratkih user stories (Scrum)?
+Primjeri zadataka
+- Zadatak A: Funkcija radi I/O na glavnoj niti → premjesti na IO dispatcher; izmjeri.
+- Zadatak B: “Loading” traje 1200 ms zbog velikog fajla → predloži kompresiju/keš.
+- Zadatak C: Više manjih mrežnih poziva → batch, keš, reduciraj payload.
 
-Praktikum
-- Zadatak: pronaći usko grlo (npr. prevelik payload ili sinhroni I/O) i predložiti fix (keširanje, smanjenje payload-a, asinkrono izvršavanje).
+Kriteriji ocjenjivanja (0–10)
+- Ispravna dijagnostika uzroka (0–4)
+- Kvalitet i realnost prijedloga (0–4)
+- Sažeto obrazloženje i mjerenje (0–2)
 
-Reference u priručniku
+Reference (Priručnik)
 - 1.1–1.4; 3.3–3.4; 4.*; 5.3/5.6/5.7
+
+Napomena
+- Nakon ove lekcije, moguće je spojiti kratki “mini‑projekat” (SRS → skice → minimalni prototip) za završno ocjenjivanje.

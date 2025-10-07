@@ -1,23 +1,30 @@
 # Lekcija 07 — Provjera znanja 1 (A.IV.1.3)
 
-Sadržaj časa
-- Kviz 1: OS, alati, struktura, lifecycle, dozvole.
-- Praktični zadatak: Manifest + runtime dozvola + Logcat.
+Trajanje: 45–60 min
+Preduslovi: Lekcije 01–06
 
-Kviz (primjer 8 pitanja)
+Sadržaj časa
+- Kviz (8–10 pitanja) na teme OS, alati, struktura, lifecycle, dozvole, I/O.
+- Praktikum: Manifest + runtime dozvola + Logcat.
+
+Predloženi kviz (8 pitanja)
 1) Uloga Android OS-a u izvršavanju aplikacija?
-2) Razlika: dozvola u Manifestu vs runtime?
-3) Dva najvažnija fajla u projektu i svrha?
-4) Navedite 2 lifecycle callback-a i kada se pozivaju.
-5) Čemu služi Logcat?
-6) Gdje se mijenja naziv aplikacije?
-7) Šta je “state” (ako koristite Compose) ili ključni UI resurs?
-8) Jedno ograničenje uređaja koje utiče na performanse.
+2) Razlika: Manifest vs runtime dozvola?
+3) Dva ključna fajla u projektu i svrha?
+4) Navedite redoslijed 4 lifecycle callback-a.
+5) Gdje vidite Log.d poruke?
+6) Kada birati SharedPreferences umjesto datoteka?
+7) Kako smanjiti footprint slika?
+8) Zašto ne blokirati UI nit?
 
 Praktikum
-- Dodati CAMERA u Manifest i runtime traženje dozvole.
-- Logovati ishod (“PermCheck: granted/denied”).
-- Kratka demonstracija i diskusija rješenja.
+- Zadatak: Dodati CAMERA u Manifest; tražiti runtime dozvolu; logovati `PermCheck`.
+- Bonus: Dodati “Učitavam…” indikator tokom simuliranog posla (500–1000 ms).
 
-Reference u priručniku
+Rubrika (0–10)
+- Kviz tačnost (0–5)
+- Praktikum radi (0–3)
+- Kvalitet logova/indikatora (0–2)
+
+Reference (Priručnik)
 - 3.1–3.4 (str. 57–76); 4.1–4.4 (str. 80–110)
