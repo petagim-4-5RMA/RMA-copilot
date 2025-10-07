@@ -18,7 +18,7 @@ Predloženi kviz (8 pitanja)
 8) Zašto ne blokirati UI nit?
 
 Praktikum
-- Zadatak: Dodati CAMERA u Manifest; tražiti runtime dozvolu; logovati `PermCheck`.
+- Zadatak: Dodati CAMERA u Manifest; tražiti runtime dozvolu; logovati PermCheck.
 - Bonus: Dodati “Učitavam…” indikator tokom simuliranog posla (500–1000 ms).
 
 Rubrika (0–10)
@@ -28,3 +28,5 @@ Rubrika (0–10)
 
 Reference (Priručnik)
 - 3.1–3.4 (str. 57–76); 4.1–4.4 (str. 80–110)
+
+---

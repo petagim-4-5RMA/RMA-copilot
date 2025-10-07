@@ -34,3 +34,5 @@ Rubrika (0–10)
 Reference (Priručnik)
 - 1.3 Scrum proces razvoja — str. 14–19
 - 1.4 Projektni tim i uloge — str. 20–23
+
+---

@@ -14,7 +14,6 @@ Pojmovi i objašnjenja
 
 Primjeri (konceptualno, bez dodatnih biblioteka)
 - Simulacija mreže:
-```kotlin
 // Ne blokirati UI – koristiti coroutine na Dispatchers.IO
 CoroutineScope(Dispatchers.Main).launch {
   val start = System.currentTimeMillis()
@@ -22,14 +21,11 @@ CoroutineScope(Dispatchers.Main).launch {
   Log.d("Perf", "Trajanje: ${System.currentTimeMillis()-start}ms")
 }
 suspend fun fakeNetworkCall(): String { delay(500); return "OK" }
-```
 - Mjerenje čitanja iz fajla (I/O):
-```kotlin
 val t0 = System.nanoTime()
 // ... čitanje
 val dtMs = (System.nanoTime() - t0) / 1_000_000
 Log.d("Perf", "I/O trajanje: ${dtMs}ms")
-```
 
 Demo (koraci)
 1) Simuliraj “loading” 0.5–1.0 s bez blokiranja UI; prikaži indikator (tekst “Učitavam…”).
@@ -58,3 +54,5 @@ Reference (Priručnik)
 - 4.4 Web servisi — str. 106–110
 - 3.4.2 Alati za otkrivanje grešaka — str. 74–75
 - 3.4.3 Ostali važni alati — str. 75–76
+
+---

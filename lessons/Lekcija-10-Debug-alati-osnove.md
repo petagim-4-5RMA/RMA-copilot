@@ -13,7 +13,7 @@ Pojmovi i objašnjenja
 - Stack trace: kako naći “prvi uzrok” (caused by/line broj), razlikovanje framework vs. naš kod.
 
 Demo (koraci)
-1) Uvesti namjernu grešku (npr. `val x = 1/0` ili NPE).
+1) Uvesti namjernu grešku (npr. val x = 1/0 ili NPE).
 2) Postaviti breakpoint i korak‑po‑korak utvrditi gdje nastaje.
 3) Pročitati stack trace u Logcatu i identifikovati liniju u našem kodu.
 4) Popraviti i potvrditi.
@@ -38,3 +38,5 @@ Rubrika (0–10)
 Reference (Priručnik)
 - 3.4.2 Alati za otkrivanje grešaka — str. 74–75
 - 3.4.3 Ostali alati — str. 75–76
+
+---

@@ -22,3 +22,5 @@ Reference (Priručnik)
 
 Napomena
 - Nakon ove lekcije, moguće je spojiti kratki “mini‑projekat” (SRS → skice → minimalni prototip) za završno ocjenjivanje.
+
+---
