@@ -35,11 +35,9 @@ Kratki primjeri/komande
 - ADB provjera uređaja:
   - Windows/macOS/Linux: u Terminalu: `adb devices` (lista emul/uređaja)
 - Logovanje iz koda (Kotlin):
-```kotlin
 import android.util.Log
 private const val TAG = "AppLog"
 Log.d(TAG, "App started")
-```
 
 Aktivnosti (učionica)
 - Aktivnost A (5–10 min): Prepoznaj sekcije IDE‑a (Project, Editor, Logcat, Gradle).
@@ -74,9 +72,11 @@ Reference (Priručnik)
 - 3.4.1 Alati za razvoj — str. 72–73
 
 Dodatni izvori
-- [Android Studio User Guide](https://developer.android.com/studio/intro)
-- [ADB Overview](https://developer.android.com/tools/adb)
+- Android Studio User Guide: https://developer.android.com/studio/intro
+- ADB Overview: https://developer.android.com/tools/adb
 
 Savjeti za diferencijaciju
 - Za učenike početnike: demonstriraj sporo korak‑po‑korak i daj snimke ekrana.
 - Za naprednije: traži da ručno pokrenu ADB i filtriraju Logcat po tagu.
+
+---

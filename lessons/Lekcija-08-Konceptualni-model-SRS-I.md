@@ -38,3 +38,5 @@ Rubrika (0–10)
 Reference (Priručnik)
 - 1.1 Razrada projektne ideje — str. 6–9
 - 1.2 Proces razvoja — str. 10–13
+
+---

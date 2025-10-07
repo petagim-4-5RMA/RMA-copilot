@@ -14,7 +14,7 @@ Pojmovi i objašnjenja
 - Liste: RecyclerView (koncept), zašto je efikasniji od linearnih layouta.
 
 Primjeri i ideje za optimizacije
-- Zamjena sinhronih I/O operacija sa asinhronim (`withContext(Dispatchers.IO)`).
+- Zamjena sinhronih I/O operacija sa asinhronim (withContext(Dispatchers.IO)).
 - Keširanje rezultata čitanja male datoteke u memoriji dok je ekran aktivan.
 - Kompaktne slike (WEBP), manji dimenzioni resursi.
 
@@ -41,3 +41,5 @@ Reference (Priručnik)
 - 5.3 RecyclerView — str. 130–141
 - 5.6 Mobilna baza podataka — str. 154–168
 - 5.7 Web servisi — str. 169–179
+
+---

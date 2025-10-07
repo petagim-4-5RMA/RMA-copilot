@@ -11,7 +11,7 @@ Ishodi učenja
 Ključni pojmovi
 - Aplikacijski stog: OS slojevi i gdje živi Activity.
 - Lifecycle: onCreate → onStart → onResume → (onPause → onStop) → onDestroy.
-- Manifest dozvole vs. runtime dozvole (od Android 6.0).
+- Manifest dozvole vs. runtime dozvola (od Android 6.0).
 - Rationale, “don’t ask again”, postavke aplikacije.
 
 Detaljna objašnjenja
@@ -22,18 +22,16 @@ Detaljna objašnjenja
 Demo (koraci)
 1) Lifecycle logovi:
    - U MainActivity dodati log u svaku callback metodu:
-```kotlin
 override fun onCreate(b: Bundle?) { super.onCreate(b); Log.d("Life","onCreate") }
 override fun onStart() { super.onStart(); Log.d("Life","onStart") }
 override fun onResume() { super.onResume(); Log.d("Life","onResume") }
 override fun onPause() { super.onPause(); Log.d("Life","onPause") }
 override fun onStop() { super.onStop(); Log.d("Life","onStop") }
 override fun onDestroy() { super.onDestroy(); Log.d("Life","onDestroy") }
-```
    - Pokreni app; zatim Home; zatim vrati se; rotiraj ekran; posmatraj Logcat.
 2) Dozvole:
-   - Manifest: `<uses-permission android:name="android.permission.CAMERA" />`
-   - UI dugme “Traži kameru”; uz `rememberLauncherForActivityResult` traži dozvolu i loguj ishod.
+   - Manifest: <uses-permission android:name="android.permission.CAMERA" />
+   - UI dugme “Traži kameru”; uz rememberLauncherForActivityResult traži dozvolu i loguj ishod.
 
 Zamke i savjeti
 - “Don’t ask again” — objasni da u tom slučaju treba u Postavke aplikacije.
@@ -47,11 +45,11 @@ Mini‑kviz (5 pitanja)
 1) Navedite 4 lifecycle callback-a i kada se javljaju.
 2) Razlika: Manifest vs runtime dozvola?
 3) Zašto je važno tražiti dozvolu “u trenutku potrebe”?
-4) Kako saznati da je korisnik označio “don’t ask again”?
+4) Kako saznati da je korisnik označio “don’t ask again”? 
 5) Gdje u Logcatu se vidi redoslijed lifecycle poziva?
 
 Domaći (15–20 min)
-- Dodaj dugme koje otvara postavke aplikacije kada je dozvola trajno odbijena (hint: `Settings.ACTION_APPLICATION_DETAILS_SETTINGS` sa `Uri.fromParts("package", packageName, null)`).
+- Dodaj dugme koje otvara postavke aplikacije kada je dozvola trajno odbijena (hint: Settings.ACTION_APPLICATION_DETAILS_SETTINGS sa Uri.fromParts("package", packageName, null)).
 
 Rubrika (0–10)
 - Ispravnost lifecycle logova (0–4)
@@ -65,4 +63,6 @@ Reference (Priručnik)
 - 3.3.4 Android Manifest — str. 69–70
 
 Dodatno
-- [Request App Permissions](https://developer.android.com/training/permissions/requesting)
+- Request App Permissions: https://developer.android.com/training/permissions/requesting
+
+---

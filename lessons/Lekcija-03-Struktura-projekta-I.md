@@ -15,15 +15,13 @@ Pojmovi i objašnjenja
 
 Primjeri
 - Promjena naziva:
-  - strings.xml: `<string name="app_name">MojaAplikacija</string>`
-  - Manifest label referiše na `@string/app_name`.
+  - strings.xml: <string name="app_name">MojaAplikacija</string>
+  - Manifest label referiše na @string/app_name.
 - Dodavanje boje i upotreba u Compose:
-```kotlin
 // colors.xml: <color name="primary_blue">#2E5AAC</color>
 @Composable fun Title() { Text("Pozdrav", color = Color(0xFF2E5AAC)) }
-```
 - Kvalifikatori:
-  - Napravi values-hr/strings.xml i prevede `app_name` → “Moja Aplikacija”.
+  - Napravi values-hr/strings.xml i prevede app_name → “Moja Aplikacija”.
 
 Demo (koraci)
 1) Pregled Project prikaza: gdje su koji fajlovi i čemu služe.
@@ -52,3 +50,5 @@ Reference (Priručnik)
 - 3.3 Programska logika — str. 64–65
 - Resursi — str. 67
 - Kvalifikatori resursa — str. 68
+
+---

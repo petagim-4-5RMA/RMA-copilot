@@ -11,20 +11,16 @@ Pojmovi i objašnjenja
 - Aplikacijski stog: slojevi (app/framework/HAL/kernel) i implikacije.
 - Pohrana:
   - SharedPreferences (ključ‑vrijednost, male postavke).
-  - Interna memorija (`openFileOutput`), eksterni storage (oprez dozvole).
+  - Interna memorija (openFileOutput), eksterni storage (oprez dozvole).
 - I/O i resursi: veličina slika, format (PNG/JPG/WEBP), keš.
 
 Primjeri koda
 - SharedPreferences:
-```kotlin
 val prefs = getSharedPreferences("app", MODE_PRIVATE)
 prefs.edit().putString("username", "Ana").apply()
 val name = prefs.getString("username", "")
-```
 - Pisanje datoteke (interna memorija):
-```kotlin
 openFileOutput("data.txt", MODE_PRIVATE).use { it.write("Pozdrav".toByteArray()) }
-```
 
 Demo (koraci)
 1) Sačuvaj i pročitaj jednostavnu postavku u prefs.
@@ -52,3 +48,5 @@ Reference (Priručnik)
 - 3.2.1 Aplikacijski stog — str. 61–62
 - 4.1 Pohrana podataka — str. 80–85
 - 4.2 Zapis u datoteke — str. 85–91
+
+---
